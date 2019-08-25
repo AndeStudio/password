@@ -3,6 +3,9 @@ pswd.js
 Ande.Studio
 v3 20190826
  **/
+target = document.getElementById("target");
+target2 = document.getElementById("target2");
+
 
 function gen(args='nul8'){//密码生成
 	if(url = location.search){
@@ -11,8 +14,9 @@ function gen(args='nul8'){//密码生成
 	}else{
 		str = randstr(args);
 	}
-	document.getElementById("target").value = str;//将str写入目标元素赋值
-	document.getElementById("textarea_").value = str + '\n' + document.getElementById("textarea_").value;//将str追加写入目标文本域
+
+	target.value = str;//将str写入目标元素赋值
+	target2.value = str + '\n' + target2.value;//将str追加写入目标文本域
 	console.log(str);
 	return str;
 }
@@ -34,7 +38,18 @@ function save(){//保存
 
 }
 window.onload = function(){//载入调用
-	gen();
+	str = gen();
+	target2.value = '';//清空gen()设置的target2值，以显示占位符
+	ph = str + `\n\n\n pswd.html?nul8
+默认参数nul8，生成8位随机字符串，包含大小写字母数字
+s:special character特殊字符
+n:number 数字
+u:upper case大写字母
+l:lower case小写字母
+数字用作控制生成随机字符的长度`//占位符
+	//target2.setAttribute("placeholder",ph);
+	target2.placeholder=ph;
+
 /**
 	var obj = new Object();
 	obj['id'] = 'genCopy_'
