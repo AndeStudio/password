@@ -1,3 +1,7 @@
+/**
+ * pswd.js
+ * Ande.Studio
+ **/
 function gen(args='nul8'){//密码生成
 	if(url = location.search){
 		args = url.substr(1);
