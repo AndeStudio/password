@@ -46,13 +46,13 @@ s:special character特殊字符
 n:number 数字
 u:upper case大写字母
 l:lower case小写字母
-数字用作控制生成随机字符的长度`//占位符
+数字用作控制生成随机字符的长度`;//占位符
 	//target2.setAttribute("placeholder",ph);
 	target2.placeholder=ph;
 
 /**
 	var obj = new Object();
-	obj['id'] = 'genCopy_'
+	obj['id'] = 'genCopy_';
 	genCopy(obj);
 	手工构造一个obj,指定obj['id']='genCopy_'或者obj.id='genCopy_',以期在载入时调用genCopy(obj),实际上确实调用了且生成了密码且没有报错，但却不会实现复制。
 	这是值得注意的问题，具体的机制有待研究。
