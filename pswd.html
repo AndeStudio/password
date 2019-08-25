@@ -3,24 +3,14 @@
 <title>PSWD</title>
 </head><body >
 
-<!--
-pswd.html?snul8
-默认参数nul8，生成8位随机字符串，包含大小写字母数字
-s:special character特殊字符
-n:number 数字
-u:upper case大写字母
-l:lower case小写字母
-数字用作控制生成随机字符的长度
--->
-
 <input type="text" id="target" />
 <button type="button" id="genCopy_" onclick='genCopy(this)' >genCopy</button>
 <button type="button"  id="gen_" onclick='gen()'>gen</button>
 <button type="button" id="copy_" onclick='copy(this)'>copy</button>
 <button type="button" id="save_" onclick='save(this)'>save</button>
 <br />
-<textarea id="textarea_" cols="30" rows="30"></textarea>
-
+<textarea id="target2" cols="30" rows="30">
+</textarea>
 </body></html>
 <script type="text/javascript" src="randstr.js"></script>
 <script type="text/javascript" src="pswd.js"></script>
