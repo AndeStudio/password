@@ -14,3 +14,4 @@ l:lower case小写字母
 
 数字用作控制生成随机字符的长度
 
+![pswd](pswd.png)
