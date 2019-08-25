@@ -1,3 +1,8 @@
+/**
+ * randstr.js
+ * Ande.Studio
+ **/
+
 function randstr(args='snul8'){
 /**
  *s:special character特殊字符
